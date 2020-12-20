@@ -2,7 +2,7 @@ const { test, expect } = require("@jest/globals")
 const Intern = require("../lib/Intern")
 
 test('creates intern object', () => {
-    const intern = new Intern('ajcuddeback', 'AJ', '25', 'UCF');
+    const intern = new Intern('AJ', '25', 'ajcuddeback@gmail.com', 'UCF');
 
     expect(intern.name).toBe('AJ');
     expect(intern.id).toBe('25');
@@ -11,7 +11,7 @@ test('creates intern object', () => {
 });
 
 test('gets the interns school', () => {
-    const intern = new Inter('ajcuddeback', 'AJ', '25', 'UCF');
+    const intern = new Intern('ajcuddeback', 'AJ', '25', 'UCF');
 
     expect(intern.getSchool()).toBe('School: UCF');
 });
