@@ -19,5 +19,5 @@ test('gets engineers github', () => {
 test('gets role of engineer', () => {
     const engineer = new Engineer('ajcuddeback');
 
-    expect(engineer.getRole()).toBe('Engineer');
+    expect(engineer.getRole()).toBe('Role: Engineer');
 });
