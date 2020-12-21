@@ -1,6 +1,5 @@
 const { default: generate } = require("@babel/generator");
 const { Console } = require("console");
-const writeFile = require('../utils/generate-site')
 
 const user = empData => {
     if (empData.officeNumber) {
@@ -33,10 +32,10 @@ const generateCards = templateData => {
 
 
 
-const generateTemplate = templateData => {
+module.exports = templateData => {
 
     return `
-        < !DOCTYPE html >
+        <!DOCTYPE html>
         <html lang="en">
         <head>
         <meta charset="UTF-8">
@@ -49,4 +48,3 @@ const generateTemplate = templateData => {
         </html>
         `
 };
-writeFile(generateTemplate);
