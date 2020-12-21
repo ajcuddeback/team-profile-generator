@@ -20,6 +20,7 @@ const generateCards = templateData => {
         return `
         <div>
             <h1>${emp.getName()}</h1>
+            <h2>${emp.getRole()}
             <p>${emp.getId()}</p>
             <p>${emp.getEmail()}</p>
             <p>${user(emp)}</p>
