@@ -1,5 +1,6 @@
 const { default: generate } = require("@babel/generator");
 const { Console } = require("console");
+// const writeFile = require('../utils/generate-site')
 
 const user = empData => {
     if (empData.officeNumber) {
@@ -14,18 +15,20 @@ const user = empData => {
 };
 
 const generateCards = templateData => {
-    templateData.forEach(emp => {
-
-        console.log(`
-            <div>
-                <h1>${emp.getName()}</h1>
-                <p>${emp.getId()}</p>
-                <p>${emp.getEmail()}</p>
-                <p>${user(emp)}</p>
-            </div>
-        `)
-    })
-};
+    return `
+    <body>
+    ${templateData.map((emp) => {
+        return `
+        <div>
+            <h1>${emp.getName()}</h1>
+            <p>${emp.getId()}</p>
+            <p>${emp.getEmail()}</p>
+            <p>${user(emp)}</p>
+        </div>
+    `
+    }).join('')}
+    </body>`
+}
 
 
 
@@ -33,20 +36,16 @@ const generateCards = templateData => {
 module.exports = templateData => {
 
     return `
-        <!DOCTYPE html>
+        < !DOCTYPE html >
         <html lang="en">
-      
         <head>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-          <title>Team Profiles</title>
-          <link rel="stylesheet" href="style.css">
-        </head>
-      
-        <body>
-            ${generateCards(templateData)}
-        </body>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Team Profiles</title>
+         <link rel="stylesheet" href="style.css">
+        </head>   
+            ${generateCards(templateData)}                   
         </html>
         `
 };
