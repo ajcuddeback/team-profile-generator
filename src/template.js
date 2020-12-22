@@ -3,31 +3,33 @@ const { Console } = require("console");
 
 const user = empData => {
     if (empData.officeNumber) {
-        return empData.officeNumber
+        return `Office Number: ${empData.officeNumber}`
     }
     if (empData.school) {
-        return empData.school
+        return `School: ${empData.school}`
     }
     if (empData.github) {
-        return empData.github
+        return `<a href="https://github.com/${empData.github}">${empData.github}</a>`
     }
 };
 
 const generateCards = templateData => {
     return `
-    <body>
-    ${templateData.map((emp) => {
+            <body>
+                <div class = "grid">
+                ${templateData.map((emp) => {
         return `
-        <div>
-            <h1>${emp.getName()}</h1>
-            <h2>${emp.getRole()}
-            <p>${emp.getId()}</p>
-            <p>${emp.getEmail()}</p>
-            <p>${user(emp)}</p>
-        </div>
+                    <div>
+                        <h1>${emp.getName()}</h1>
+                        <h2>${emp.getRole()}
+                        <p>${emp.getId()}</p>
+                        <p>${emp.getEmail()}</p>
+                        <p>${user(emp)}</p>
+                    </div>
     `
     }).join('')}
-    </body>`
+                </div>
+            </body>`
 }
 
 
