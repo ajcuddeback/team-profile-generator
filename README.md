@@ -1,3 +1,4 @@
+![GitHub](https://img.shields.io/github/license/ajcuddeback/team-profile-generator)
 ![GitHub top language](https://img.shields.io/github/languages/top/ajcuddeback/team-profile-generator)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ajcuddeback/team-profile-generator)
 ![GitHub issues](https://img.shields.io/github/issues/ajcuddeback/team-profile-generator)
