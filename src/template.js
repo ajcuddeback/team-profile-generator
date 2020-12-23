@@ -23,7 +23,7 @@ const generateCards = templateData => {
                         <h1>${emp.getName()}</h1>
                         <h2>${emp.getRole()}
                         <p>${emp.getId()}</p>
-                        <p>${emp.getEmail()}</p>
+                        <p>Email: <a href="https://${emp.getEmail()}">${emp.getEmail()}</a></p>
                         <p>${user(emp)}</p>
                     </div>
     `
