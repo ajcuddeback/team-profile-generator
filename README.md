@@ -45,19 +45,19 @@ This project usage is for anyone that needs to make a team profile roster with a
 
 - Step 4: Answer the prompts
 
-![step-4](images/step-4.png)
+![step-4](images/Step-4.png)
 
 - Step 5: Once you finish answering the prompts type 'code .' in the terminal
 
-![step-5](images/step-5.png)
+![step-5](images/Step-5.png)
 
 Step 6: Navigate to the dist folder
 
-![step-6](images/step-6.png)
+![step-6](images/Step-6.png)
 
 - Step 7: An HTML File will be created that you can then open in your browser to view all your employees!
 
-![step-7](images/step-7.png)
+![step-7](images/Step-7.png)
 
 ## Final Product Preview
 
