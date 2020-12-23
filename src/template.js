@@ -9,19 +9,22 @@ const user = empData => {
         return `School: ${empData.school}`
     }
     if (empData.github) {
-        return `<a href="https://github.com/${empData.github}">${empData.github}</a>`
+        return `<p>Github: <a href="https://github.com/${empData.github}">${empData.github}</a></p>`
     }
 };
 
 const generateCards = templateData => {
     return `
             <body>
+                <div class="header-wrapper">
+                    <h1>Team Profiles</h1>
+                </div>
                 <div class = "grid">
                 ${templateData.map((emp) => {
         return `
                     <div>
-                        <h1>${emp.getName()}</h1>
-                        <h2>${emp.getRole()}
+                        <h2>${emp.getName()}</h2>
+                        <h3>${emp.getRole()}</h3>
                         <p>${emp.getId()}</p>
                         <p>Email: <a href="https://${emp.getEmail()}">${emp.getEmail()}</a></p>
                         <p>${user(emp)}</p>
