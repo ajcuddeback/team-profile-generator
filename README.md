@@ -2,7 +2,7 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/ajcuddeback/team-profile-generator)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ajcuddeback/team-profile-generator)
 ![GitHub issues](https://img.shields.io/github/issues/ajcuddeback/team-profile-generator)
-![YouTube Video Views](https://img.shields.io/youtube/views/TaInk3BLWTI?label=YT%20Views&logo=youtube&logoColor=red&style=flat-square)
+![YouTube Video Views](https://img.shields.io/youtube/views/q0_egGq6hzE?label=YT%20Views&logo=youtube&logoColor=red&style=flat-square)
 
 # Team Profile Generator
 
@@ -16,6 +16,7 @@ This project will generate a roster of your team in and HTML document that you c
 - [Usage](#usage)
 - [Instructions](#instructions)
 - [Final Product Preview](#Final-Product-Preview)
+- [Testing](#testing)
 - [License](#license)
 - [Questions](#questions)
 
@@ -29,7 +30,7 @@ This project usage is for anyone that needs to make a team profile roster with a
 
 ## Instructions
 
-- If you would like to view a video on how to install and use, go to my [Youtube Channel](https://www.youtube.com/)
+- If you would like to view a video on how to install and use, go to my [Youtube Channel](https://youtu.be/q0_egGq6hzE)
 
 - Step 1: Clone this repository
 
@@ -62,6 +63,10 @@ Step 6: Navigate to the dist folder
 ## Final Product Preview
 
 ![Preview](images/final.png)
+
+## Testing
+
+- Run 'npm run test' in order to run the tests
 
 ## License
 
